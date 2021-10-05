@@ -1,0 +1,50 @@
+
+.wrapper{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color: purple;
+}
+
+.Highscores{
+    font-size: 20px;
+}
+    
+
+.wrapper{
+    display: inline-block;
+}
+
+.Timer {
+    font-size: 16px;
+    text-align: right;
+    margin-top: -15px;
+}
+
+.Timer {
+    font-size: 20px;
+}
+
+.wrapper{
+    font-weight: bolder;
+    color:white;
+}
+
+#ul{
+    justify-content: space-evenly;
+}
+
+.Questions{
+    display:inline-block;
+    justify-content: space-evenly;
+}
+
+.Timer img{
+    height: 1%;
+    width: 1%;
+    padding: 65px;
+    margin-top: -87px;
+}
