@@ -19,39 +19,23 @@ startButton.addEventListener('click', function start() {
     timer = setInterval(function() {
     timeLeft--;
     document.getElementById("timeLeft").innerHTML = timeLeft;
-        //proceed to end the game function when timer is below 0 at any time
         if (timeLeft <= 0) {
             clearInterval(timer);
             endGame(); 
         }
     }, 1000);
 
+    if (answer === wrong)
+
     next();
 })
+
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-
-function start() {
-
-    timeLeft = 75;
-    document.getElementById("timeLeft").innerHTML = timeLeft;
-
-    timer = setInterval(function() {
-        timeLeft--;
-        document.getElementById("timeLeft").innerHTML = timeLeft;
-        //proceed to end the game function when timer is below 0 at any time
-        if (timeLeft <= 0) {
-            clearInterval(timer);
-            endGame(); 
-        }
-    }, 1000);
-
-    next();
-}
 
 function startGame(){
     startButton.classList.add('hide')
@@ -101,6 +85,7 @@ function selectAnswer(e){
         setStatusClass(button, button.dataset.correct)
     })
     nextButton.classList.remove('hide')
+    
 }
 
 function setStatusClass(element, correct){
